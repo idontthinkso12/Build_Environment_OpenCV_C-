@@ -72,9 +72,51 @@ Go to **Start** (you can press Win button). Enter **view advanced system setting
 
 ### **III. Using CMake**
 
-Open **CMake(cmake-gui)** by searching **cmake** in **Start**. Specify **Where is the source code** and **Where to build the binaries**.  For the first domain, it is `$CV$/sources`. For the second domain, it is `$CV$/build/x64/MinGW`.
+Open **CMake(cmake-gui)** by searching **cmake** in **Start**. Specify **Where is the source code** and **Where to build the binaries**.  For the first domain, it is `$CV$/sources`. For the second domain, it is `$CV$/build/x64/MinGW` (the empty folder created in step **I.2**).
 
 <p align="center">
   <img src="./screenshot/win/win_7.png">
+</p>
+
+Click **Configure** and we choose the following options: **MinGW Makefiles** and **Specify native compilers**. Click **Next**.
+
+<p align="center">
+  <img src="./screenshot/win/win_8_1.png">
+</p>
+
+We need to provide the paths of native C and C++ compilers. They are `$MINGW$/bin/gcc.exe` and `$MINGW$/bin/g++.exe`.
+
+<p align="center">
+  <img src="./screenshot/win/win_8_2.png">
+</p>
+
+After the configuration is done, make sure the value of **WITH_OPENGL** is checked, and **WITH_IPP** and **ENABLE_PRECOMPILED_HEADERS** are unchecked. You can quickly find these items by typing their names in the **Search** domain. Then click **Generate**.
+
+When the generation is done, you will see "Generating done" in the message. Go to the folder `$CV$/build/x64/MinGW` and right click to open a **Terminal** at current path. You can also realize this by opening a **Command Prompt** and navigating to `$CV$/build/x64/MinGW`. 
+
+Double check that you are at `$CV$/build/x64/MinGW`. In the **Terminal** (or **Command Prompt**), type the command `mingw32-make.exe`. This will take a while. Please be patient.
+
+<p align="center">
+  <img src="./screenshot/win/win_make_start.png">
+</p>
+
+When this make process is done, you should see "[100%]" with no error message. If there is an error, try to search online and usually you are not the first one who met the issue. You should also go through all above steps and make sure all of them are very carefully followed. Sometimes a typo will ruin the whole process. Be careful.
+
+<p align="center">
+  <img src="./screenshot/win/win_make_end.png">
+</p>
+
+In the same **Terminal**, type the command `mingw32-make.exe install`. When it is done, CMake part is finished! Congratulations!
+
+<p align="center">
+  <img src="./screenshot/win/win_make_install.png">
+</p>
+
+### **IV. Update Environment Variables (AGAIN)**
+
+Add `$CV$/build/x64/MinGW/bin` to **Path** following similar steps in **II**. Then you should be able to see all three new paths as shown below.
+
+<p align="center">
+  <img src="./screenshot/win/win_5_p2.png">
 </p>
 
