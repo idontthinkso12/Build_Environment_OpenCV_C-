@@ -64,9 +64,17 @@ There are a bunch of comprehensive and detailed installation tutorials online. T
 
 ### **II. Update Environment Variables**
 
-Go to **Start** (you can press Win button). Enter **view advanced system settings**. Click **Environment Variables** and double click **Path** under **System variables** section. Click **new** and mannually add the following two paths (seperately): `$CMAKE$\bin` and ``
+Go to **Start** (you can press Win button). Enter **view advanced system settings**. Click **Environment Variables** and double click **Path** under **System variables** section. Click **New** and mannually add the following two paths (seperately): `$CMAKE$\bin` and `$MINGW$\bin`. Please replace `$CMAKE$` and `$MINGW$` to your own paths. If you followed [Using GCC with MinGW](https://code.visualstudio.com/docs/cpp/config-mingw), you should have already added the MinGW path in the last step. Then you will only need to add CMake to the path. Only if MinGW path is added, you can test if MinGW is properly installed.
 
 <p align="center">
   <img src="./screenshot/win/win_5_p1.png">
+</p>
+
+### **III. Using CMake**
+
+Open **CMake(cmake-gui)** by searching **cmake** in **Start**. Specify **Where is the source code** and **Where to build the binaries**.  For the first domain, it is `$CV$/sources`. For the second domain, it is `$CV$/build/x64/MinGW`.
+
+<p align="center">
+  <img src="./screenshot/win/win_7.png">
 </p>
 
