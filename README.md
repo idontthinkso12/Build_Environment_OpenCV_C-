@@ -64,9 +64,9 @@ There are a bunch of comprehensive and detailed installation tutorials online. T
 
 ### **II. Update Environment Variables**
 
-Go to **Start** (you can press Win button). Enter **view advanced system settings**. Click **Environment Variables** and double click **Path** under **System variables** section. Click **new** and mannually add the following three paths (seperately): 
+Go to **Start** (you can press Win button). Enter **view advanced system settings**. Click **Environment Variables** and double click **Path** under **System variables** section. Click **new** and mannually add the following two paths (seperately): `$CMAKE$\bin` and ``
 
 <p align="center">
-  <img src="./screenshot/win/win_5_1.png">
+  <img src="./screenshot/win/win_5_1_new.png">
 </p>
 
