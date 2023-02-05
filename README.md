@@ -1,7 +1,7 @@
 # Build_Environment_OpenCV_CXX
 This repo provides tutorials on building environment of OpenCV (C++) on Windows and Mac (Both Intel and Apple silicon)
 
-## on Windows
+## Windows
 **Reference**
 
 1. [【C/C++】VS Code配置Opencv用于机器视觉数字图像处理技术](https://blog.csdn.net/qq_37365857/article/details/103490774?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-4-103490774-blog-124402319.pc_relevant_3mothn_strategy_and_data_recovery&spm=1001.2101.3001.4242.3&utm_relevant_index=7)
@@ -148,5 +148,4 @@ You are ready to go!
 
 ### **Test**
 
-Create a 
-
+A test image ([Tumbo.jpg](./Tumbo.jpg)) and a test code ([main.cpp](./main.cpp)) are provided in this repo. If you are a beginner, feel free to download these files and move them to the working directory to test if the environment is properly configured. Put them at the same level of *.vscode*, not inside. In VS code, press **F5** or **Run** -> **Start Debugging**, eqivalently, to run the code. If you see an image of Tumbo (my dog) pops up, congratulations! 
