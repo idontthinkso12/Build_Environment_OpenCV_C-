@@ -148,4 +148,4 @@ You are ready to go!
 
 ### **Test**
 
-A test image ([Tumbo.jpg](./Tumbo.jpg)) and a test code ([main.cpp](./main.cpp)) are provided in this repo. If you are a beginner, feel free to download these files and move them to the working directory to test if the environment is properly configured. Put them at the same level of *.vscode*, not inside. In VS code, press **F5** or **Run** -> **Start Debugging**, eqivalently, to run the code. If you see an image of Tumbo (my dog) pops up, congratulations! 
+A test image ([Tumbo.jpg](./Tumbo.jpg)) and a test code ([main.cpp](./main.cpp)) are provided in this repo. If you are a beginner, feel free to download these files and move them to the working directory to test if the environment is properly configured. Put them at the same level of **.vscode**, not inside. In VS code, press **F5** or **Run** -> **Start Debugging**, eqivalently, to run the code. If you see an image of Tumbo (my dog) pops up, congratulations! 
