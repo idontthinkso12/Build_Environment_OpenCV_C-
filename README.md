@@ -1,4 +1,4 @@
-# Build_Environment_OpenCV_C-
+# Build_Environment_OpenCV_CXX
 This repo provides tutorials on building environment of OpenCV (C++) on Windows and Mac (Both Intel and Apple silicon)
 
 ## on Windows
@@ -21,9 +21,34 @@ This repo provides tutorials on building environment of OpenCV (C++) on Windows 
 ### **I. Preparation**
 We need to make sure the following parts are installed: 1. Visual Studio Code (aka VS code) 2. MinGW 3. OpenCV 4. CMake
 
-**I.1 Installing VS code**
+**I.1 Install VS code**
 
 VS code is a handy and versitile text editor. It can be downloaded from the official website at [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
-Open VS code, go to "Extensions" and search "c/c++". Install the C/C++ extension provided by Microsoft.
+Open VS code, go to "Extensions" and search "c/c++". Install the C/C++ extension provided by Microsoft. After the installation, researt VS code.
 
-![image](./win_1.png)
+<p align="center">
+  <img src="./screenshot/win/win_1.png">
+</p>
+
+**I.2 Install OpenCV**
+
+OpenCV can be downloaded at [https://opencv.org/releases](https://opencv.org/releases/). Follow the onscreen instructions and finalizae the installation. **Make sure you note the installation path.** In my case, it is installed at `D:\opencv`. This location is denoted as `$CV$` in the rest of this tutorial for Windows.
+
+<p align="center">
+  <img src="./screenshot/win/win_2.png">
+</p>
+
+Then you want to create a new folder under `$CV$/build/x64` called `MinGW` (it is empty as of now).
+
+<p align="center">
+  <img src="./screenshot/win/win_3.png">
+</p>
+
+**I.3 Install CMake**
+CMake can be downloaded at [https://cmake.org/download](https://cmake.org/download/). Follow the onscreen instructions and finalizae the installation.
+
+<p align="center">
+  <img src="./screenshot/win/win_4.png">
+</p>
+
+
