@@ -120,3 +120,33 @@ Add `$CV$/build/x64/MinGW/bin` to **Path** following similar steps in **II**. Th
   <img src="./screenshot/win/win_5_p2.png">
 </p>
 
+### **V. The Final Part**
+
+Create a working folder at a desired location. Mine is called "OpenCVTest" at `C:\Users\Yiming Bian\Desktop\OpenCVTest` (desktop). Download the folder "[.vscode](./.vscode)" in this repo and move it to the working directory, in my case it is `C:\Users\Yiming Bian\Desktop\OpenCVTest`. This folder contains three json files: **c_cpp_properties.json**, **launch.json**, and **tasks.json**. You need to modify them as will be mentioned.
+
+Open VS code and open your working directory by **File** -> **Open Folder...**. 
+
+Modify **c_cpp_properties.json** by replacing with your own `$CV$/build/include` and `$MINGW$/bin/gcc.exe` paths, as shown below.
+
+<p align="center">
+  <img src="./screenshot/win/win_9_new.png">
+</p>
+
+Modify **launch.json** by replacing with your `$MINGW$/bin/gdb.exe` path.
+
+<p align="center">
+  <img src="./screenshot/win/win_10_new.png">
+</p>
+
+For **tasks.json**, you may need to make a lot of changes if our OpenCV versions are different. First, you need to update your paths of `$CV$/build/include` and `$CV$/build/x64/MinGW/lib`. Go to `$CV$/build/x64/MinGW/lib` and you will see a bunch of files ending with **.dll.a**. Update this json file with **.dll.a** file names (**ONLY**).  
+
+<p align="center">
+  <img src="./screenshot/win/win_11_new.png">
+</p>
+
+You are ready to go!
+
+### **Test**
+
+Create a 
+
