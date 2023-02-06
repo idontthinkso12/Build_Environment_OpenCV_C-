@@ -63,7 +63,7 @@ gcc -v
 in Command Prompt. If the output is similar as shown below, the installation is successful. Also, **Make sure you note the installation path.** In my case, it is installed at `C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64`, denoted as `$MINGW$`.
 
 <p align="center">
-  <img src="./screenshot/win/win_6.png">
+  <img src="./screenshot/win/win_6.png", width = 800>
 </p>
 
 ### **II. Update Environment Variables**
@@ -85,13 +85,13 @@ Open **CMake(cmake-gui)** by searching **cmake** in **Start**. Specify **Where i
 Click **Configure** and we choose the following options: **MinGW Makefiles** and **Specify native compilers**. Click **Next**.
 
 <p align="center">
-  <img src="./screenshot/win/win_8_1.png">
+  <img src="./screenshot/win/win_8_1.png", width = 500>
 </p>
 
 We need to provide the paths of native C and C++ compilers. They are `$MINGW$/bin/gcc.exe` and `$MINGW$/bin/g++.exe`.
 
 <p align="center">
-  <img src="./screenshot/win/win_8_2.png">
+  <img src="./screenshot/win/win_8_2.png", width = 500>
 </p>
 
 After the configuration is done, make sure the value of **WITH_OPENGL** is checked, and **WITH_IPP** and **ENABLE_PRECOMPILED_HEADERS** are unchecked. You can quickly find these items by typing their names in the **Search** domain. Then click **Generate**.
@@ -108,13 +108,13 @@ mingw32-make.exe
 This will take a while. Please be patient.
 
 <p align="center">
-  <img src="./screenshot/win/win_make_start.png">
+  <img src="./screenshot/win/win_make_start.png", width = 800>
 </p>
 
 When this make process is done, you should see "[100%]" with no error message. If there is an error, try to search online and usually you are not the first one who met the issue. You should also go through all above steps and make sure all of them are very carefully followed. A typo will ruin the whole process. Please be careful.
 
 <p align="center">
-  <img src="./screenshot/win/win_make_end.png">
+  <img src="./screenshot/win/win_make_end.png", width = 800>
 </p>
 
 In the same **Terminal**, type the command 
@@ -124,7 +124,7 @@ mingw32-make.exe install
 When it is done, CMake part is finished! Congratulations!
 
 <p align="center">
-  <img src="./screenshot/win/win_make_install.png">
+  <img src="./screenshot/win/win_make_install.png", width = 800>
 </p>
 
 ### **IV. Update Environment Variables (AGAIN)**
@@ -217,13 +217,13 @@ If you go to `/opt/homebrew/Cellar/opencv/4.7.0_1/` (version could vary), you sh
 Open **Xcode** to create a new project, select **Command Line Tool** under **macOS** platform tab.
 
 <p align="center">
-  <img src="./screenshot/mac/mac_1_1.png">
+  <img src="./screenshot/mac/mac_1_1.png", width = 500>
 </p>
 
 Specify the project name (in my case, it is "OpenCVTest") and language to C++.
 
 <p align="center">
-  <img src="./screenshot/mac/mac_1_2.png">
+  <img src="./screenshot/mac/mac_1_2.png", width = 500>
 </p>
 
 **II.2 Link OpenCV**
@@ -250,23 +250,24 @@ pkg-config --libs-only-l opencv4
 We mark the figure below as `FIG_A`.
 
 <p align="center">
-  <img src="./screenshot/mac/mac_2_1.png">
+  <img src="./screenshot/mac/mac_2_1.png", width = 800>
 </p>
 
-We can query OpenCV modules by command
+Open a new **Terminal** window (not necessary, just for a clear observation). We can query OpenCV modules by command
 ```
 pkg-config --libs-only-L opencv4
 ```
-and we query the local of OpenCV by command
+In the same window, we query the location of OpenCV by command
 ```
 pkg-config --cflags opencv4
 ```
 
-You should observe a similar output as shown below. This figure is marked as `FIG_B`.
+You should observe similar outputs as shown below. This figure is marked as `FIG_B`.
 
 <p align="center">
-  <img src="./screenshot/mac/mac_2_2.png">
+  <img src="./screenshot/mac/mac_2_2.png", width = 800>
 </p>
+
 
 
 ### **Test**
