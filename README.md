@@ -276,13 +276,13 @@ In **Xcode**, we first select the project instance, which consists of a blue App
   <img src="./screenshot/mac/mac_3_1.png">
 </p>
 
-Then we search for `library search paths` and do the same process to `Library Search Paths` line. Paste the first output in `FIG_B` as shown below.
+Then we search for `library search paths` and do the same process to `Library Search Paths` line. Paste the first output (excluding "-L") in `FIG_B` as shown below.
 
 <p align="center">
   <img src="./screenshot/mac/mac_3_2.png">
 </p>
 
-Lastly, we search for `header search path` and paste the second output in `FIG_B` in `Header Search Paths` line.
+Lastly, we search for `header search path` and paste the second output (excluding "-I") in `FIG_B` in `Header Search Paths` line.
 
 <p align="center">
   <img src="./screenshot/mac/mac_3_3.png">
