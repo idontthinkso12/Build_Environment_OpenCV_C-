@@ -303,9 +303,9 @@ With the code and image properly placed in the project, you should see a similar
   <img src="./screenshot/mac/mac_4_2.png">
 </p>
 
-The test code in this figure is slightly different from what is provided in this repo because I would like to share two ways of accessing a file (in this case, an image). As suggested in the code comments, two ways of specifying the path of an image are using absolute and relative paths.
+The test code in this figure is slightly different from what is provided in this repo because I would like to share two ways of accessing a file (in this case, an image). As suggested in the code comments, two ways of specifying the image path are using absolute and relative paths.
 
-Using an absolute path requires the coder to always provide the full path to the image file. It is very straightforward, however troublesome. Using a relative path is simpler and gives the coder a clear sense when manging the files. But an additional step is needed to use relative paths.
+Using an absolute path requires the coder to always provide the full path to the image file. It is very straightforward, however troublesome. Using a relative path is simpler and gives the coder a clear sense when manging the files. But an additional step is needed.
 
 In this case, the test image **Tumbo.jpg** is added to the same location where **main.cpp** resides. We first select the project, then go to **Build Phases**. We click `+` to add a **Copy Files** instance. We sepecify the **Destination** as **Products Directory** and add **Tumbo.jpg** to the item list by clicking the `+` below. The final 1% is finished, and we are officially good to go!
 
