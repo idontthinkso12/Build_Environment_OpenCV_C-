@@ -268,6 +268,49 @@ You should observe similar outputs as shown below. This figure is marked as `FIG
   <img src="./screenshot/mac/mac_2_2.png", width = 800>
 </p>
 
+With all three outputs above, we are finally ready to link OpenCV to our project in Xcode!
+
+In **Xcode**, we first select the project instance, which consists of a blue App Store icon and project name, locating in the project navigator on the left of the code editor. Then select **Build Settings** and search for `Other linker flags`. Double click `Other Linker Flags` line and click `+`. Copy the output in `FIG_A` and paste in this domain as shown below.
+
+<p align="center">
+  <img src="./screenshot/mac/mac_3_1.png">
+</p>
+
+Then we search for `library search paths` and do the same process to `Library Search Paths` line. Paste the first output in `FIG_B` as shown below.
+
+<p align="center">
+  <img src="./screenshot/mac/mac_3_2.png">
+</p>
+
+Lastly, we search for `header search path` and paste the second output in `FIG_B` in `Header Search Paths` line.
+
+<p align="center">
+  <img src="./screenshot/mac/mac_3_3.png">
+</p>
+
+Conguratulations! You are 99% done!
 
 
 ### **Test**
+
+A test image ([Tumbo.jpg](./Tumbo.jpg)) and a test code ([main.cpp](./main.cpp)) are provided in this repo. If you are a beginner, feel free to download and use these files for the testing purpose. 
+
+As there is already an initial **main.cpp** file in the project, I recommend you to replace its content with the given test code directly. To add the test image to our project, you should right click the blank area in the project navigator then select **Add Files to "OpenCVTest"...** (the project name varies). A common mistake is directly copying and the image to the project folder in **Finder**. It will not appear in the project navigator in Xcode. Please avoid this mistake.
+
+With the code and image properly placed in the project, you should see a similar result as shown below.
+
+<p align="center">
+  <img src="./screenshot/mac/mac_4_2.png">
+</p>
+
+The test code in this figure is slightly different from what is provided in this repo because I would like to share two ways of accessing a file (in this case, an image). As suggested in the code comments, two ways of specifying the path of an image are using absolute and relative paths.
+
+Using an absolute path requires the coder to always provide the full path to the image file. It is very straightforward, however troublesome. Using a relative path is simpler and gives the coder a clear sense when manging the files. But an additional step is needed to use relative paths.
+
+In this case, the test image **Tumbo.jpg** is added to the same location where **main.cpp** resides. We first select the project, then go to **Build Phases**. We click `+` to add a **Copy Files** instance. We sepecify the **Destination** as **Products Directory** and add **Tumbo.jpg** to the item list by clicking the `+` below. The final 1% is finished, and we are officially good to go!
+
+<p align="center">
+  <img src="./screenshot/mac/mac_4_1_new.jpg">
+</p>
+
+Go to **main.cpp** and click the **Start the active scheme** (the play button) on top of the project navigator. You should see Tumbo shortly!
