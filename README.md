@@ -94,7 +94,7 @@ We need to provide the paths of native C and C++ compilers. They are `$MINGW$/bi
   <img src="./screenshot/win/win_8_2.png", width = 500>
 </p>
 
-After the configuration is done, make sure the value of **WITH_OPENGL** is checked, and **WITH_IPP**, **WITH_OBSSENSOR**, **WITH_MSMF** and **ENABLE_PRECOMPILED_HEADERS** are unchecked. You can quickly find these items by typing their names in the **Search** domain. Then click **Generate**.
+After the configuration is done, make sure the value of **WITH_OPENGL** is checked, and **WITH_IPP**,  **WITH_OBSSENSOR**,  **WITH_MSMF** and  **ENABLE_PRECOMPILED_HEADERS** are unchecked. You can quickly find these items by typing their names in the **Search** domain. Then click **Generate**.
 
 When the generation is done, you will see "Generating done" in the message. Go to the folder `$CV$/build/x64/MinGW` and right click to open a **Terminal** at current path. You can also realize this by opening a **Command Prompt** and navigating to `$CV$/build/x64/MinGW` by
 ```
